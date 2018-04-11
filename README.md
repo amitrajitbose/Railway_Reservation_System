@@ -2,8 +2,7 @@
 
 ### Description
 
-This project simulates a railway reservation and train ticket booking system. We have used Microsoft
-Visual Basic 6.0.
+This is a project on Railway Reservation System done on visual basic.
 
 ### Collaborators
 
