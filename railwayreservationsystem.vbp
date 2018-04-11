@@ -1,6 +1,8 @@
 Type=Exe
 Form=welcomepage.frm
 Reference=*\G{00020430-0000-0000-C000-000000000046}#2.0#0#..\..\..\..\..\Windows\system32\stdole2.tlb#OLE Automation
+Form=loginpage1.frm
+IconForm="welcomepage"
 Startup="welcomepage"
 Command32=""
 Name="Project1"

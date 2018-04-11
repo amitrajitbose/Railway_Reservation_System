@@ -12,7 +12,7 @@ Begin VB.Form welcomepage
    MinButton       =   0   'False
    ScaleHeight     =   4155
    ScaleWidth      =   6675
-   StartUpPosition =   3  'Windows Default
+   StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton Command2 
       Caption         =   "Proceed"
       Height          =   495
@@ -83,4 +83,9 @@ Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub Command1_Click()
 Unload Me
+End Sub
+
+Private Sub Command2_Click()
+loginpage1.Show
+Unload welcomepage
 End Sub
