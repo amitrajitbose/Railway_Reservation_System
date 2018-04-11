@@ -2,7 +2,7 @@
 
 ### Description
 
-This is a project on Railway Reservation System done on visual basic.
+This is a project on Railway Reservation System, done on Microsoft Visual Basic 6.0.
 
 ### Collaborators
 
