@@ -16,7 +16,7 @@ Begin VB.Form welcomepage
    Begin VB.CommandButton Command2 
       Caption         =   "Proceed"
       Height          =   495
-      Left            =   3840
+      Left            =   1080
       TabIndex        =   3
       Top             =   3360
       Width           =   1575
@@ -24,7 +24,7 @@ Begin VB.Form welcomepage
    Begin VB.CommandButton Command1 
       Caption         =   "Exit"
       Height          =   495
-      Left            =   1080
+      Left            =   3960
       TabIndex        =   2
       Top             =   3360
       Width           =   1575
