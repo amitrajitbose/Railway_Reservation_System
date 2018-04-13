@@ -1,16 +1,17 @@
 VERSION 5.00
 Begin VB.Form loginpage1 
-   BackColor       =   &H80000003&
+   BackColor       =   &H00FFFFFF&
    Caption         =   "Login"
-   ClientHeight    =   2775
+   ClientHeight    =   2772
    ClientLeft      =   120
-   ClientTop       =   450
-   ClientWidth     =   4905
+   ClientTop       =   456
+   ClientWidth     =   4908
    LinkTopic       =   "Form1"
-   ScaleHeight     =   2775
-   ScaleWidth      =   4905
+   ScaleHeight     =   2772
+   ScaleWidth      =   4908
    StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton Command2 
+      BackColor       =   &H00FF8080&
       Caption         =   "SIGNUP"
       BeginProperty Font 
          Name            =   "Century Gothic"
@@ -23,15 +24,17 @@ Begin VB.Form loginpage1
       EndProperty
       Height          =   375
       Left            =   2640
+      Style           =   1  'Graphical
       TabIndex        =   5
       Top             =   1800
       Width           =   975
    End
    Begin VB.CommandButton Command1 
+      BackColor       =   &H00FF8080&
       Caption         =   "LOGIN"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -40,6 +43,7 @@ Begin VB.Form loginpage1
       EndProperty
       Height          =   375
       Left            =   960
+      Style           =   1  'Graphical
       TabIndex        =   4
       Top             =   1800
       Width           =   975
@@ -93,6 +97,7 @@ Begin VB.Form loginpage1
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H00800000&
       Height          =   375
       Left            =   240
       TabIndex        =   1
@@ -112,6 +117,7 @@ Begin VB.Form loginpage1
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H00800000&
       Height          =   375
       Left            =   240
       TabIndex        =   0
@@ -124,6 +130,11 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
+Private Sub Command2_Click()
+signup.Show
+Unload Me
+End Sub
+
 Private Sub Text1_Click()
 Text1.Text = ""
 End Sub
