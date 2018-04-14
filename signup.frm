@@ -1,12 +1,12 @@
 VERSION 5.00
 Begin VB.Form signup 
    Caption         =   "Signup"
-   ClientHeight    =   4155
-   ClientLeft      =   105
-   ClientTop       =   450
+   ClientHeight    =   4152
+   ClientLeft      =   108
+   ClientTop       =   456
    ClientWidth     =   7140
    LinkTopic       =   "Form1"
-   ScaleHeight     =   4155
+   ScaleHeight     =   4152
    ScaleWidth      =   7140
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command2 
@@ -27,83 +27,85 @@ Begin VB.Form signup
    End
    Begin VB.TextBox Text7 
       Height          =   495
-      Left            =   1800
+      Left            =   2040
       TabIndex        =   14
       Top             =   2880
-      Width           =   4575
+      Width           =   4332
    End
    Begin VB.TextBox Text6 
       Height          =   495
-      Left            =   1800
+      Left            =   2040
       TabIndex        =   13
       Top             =   2400
-      Width           =   4575
+      Width           =   4332
    End
    Begin VB.TextBox Text5 
       Height          =   375
-      Left            =   1800
+      Left            =   2040
       TabIndex        =   12
       Top             =   2040
-      Width           =   4575
+      Width           =   4332
    End
    Begin VB.TextBox Text4 
       Height          =   375
-      Left            =   1800
+      Left            =   2040
       TabIndex        =   7
       Top             =   1680
-      Width           =   4575
+      Width           =   4332
    End
    Begin VB.TextBox Text3 
       Height          =   405
       IMEMode         =   3  'DISABLE
-      Left            =   1800
+      Left            =   2040
       PasswordChar    =   "*"
       TabIndex        =   5
       Top             =   1320
-      Width           =   4575
+      Width           =   4332
    End
    Begin VB.TextBox Text2 
       Height          =   405
-      Left            =   1800
+      Left            =   2040
       TabIndex        =   4
       Top             =   960
-      Width           =   4575
+      Width           =   4332
    End
    Begin VB.TextBox Text1 
       Height          =   405
-      Left            =   1800
+      Left            =   2040
       TabIndex        =   3
       Top             =   600
-      Width           =   4575
+      Width           =   4332
    End
    Begin VB.Label Label8 
       Caption         =   "PHONE NUMBER"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   8.25
+         Size            =   10.2
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   375
+      ForeColor       =   &H00800000&
+      Height          =   372
       Left            =   240
       TabIndex        =   11
       Top             =   1800
-      Width           =   1455
+      Width           =   1692
    End
    Begin VB.Label Label7 
       Caption         =   "EMAIL ID"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   10.2
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H00800000&
       Height          =   375
       Left            =   240
       TabIndex        =   10
@@ -114,13 +116,14 @@ Begin VB.Form signup
       Caption         =   "DATE OF BIRTH"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H00800000&
       Height          =   375
       Left            =   240
       TabIndex        =   9
@@ -139,6 +142,7 @@ Begin VB.Form signup
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H00800000&
       Height          =   495
       Left            =   1320
       TabIndex        =   8
@@ -149,13 +153,14 @@ Begin VB.Form signup
       Caption         =   "CONFIRM PASSWORD"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H00800000&
       Height          =   615
       Left            =   240
       TabIndex        =   6
@@ -166,7 +171,7 @@ Begin VB.Form signup
       Caption         =   "PASSWORD"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -184,7 +189,7 @@ Begin VB.Form signup
       Caption         =   "USERNAME"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -192,17 +197,17 @@ Begin VB.Form signup
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00800000&
-      Height          =   495
+      Height          =   252
       Left            =   240
       TabIndex        =   1
       Top             =   960
-      Width           =   1575
+      Width           =   1572
    End
    Begin VB.Label Label1 
       Caption         =   "NAME"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
