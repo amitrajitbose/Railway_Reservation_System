@@ -3,46 +3,39 @@ Begin VB.Form welcomepage
    BackColor       =   &H00FFFFFF&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Indian Railways"
-   ClientHeight    =   4248
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   7368
+   ClientHeight    =   4245
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   7305
    FillColor       =   &H00C00000&
    ForeColor       =   &H00C00000&
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   4248
-   ScaleWidth      =   7368
+   ScaleHeight     =   4245
+   ScaleWidth      =   7305
    StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton Command2 
-      BackColor       =   &H00FF8080&
+      BackColor       =   &H00E0E0E0&
       Caption         =   "Proceed"
       Height          =   495
-      Left            =   1200
+      Left            =   1320
       MaskColor       =   &H00FFFFFF&
       Style           =   1  'Graphical
       TabIndex        =   2
-      Top             =   3360
+      Top             =   3480
       Width           =   1575
    End
    Begin VB.CommandButton Command1 
-      BackColor       =   &H00FF8080&
+      BackColor       =   &H00E0E0E0&
       Caption         =   "Exit"
       Height          =   495
       Left            =   4200
       MaskColor       =   &H00FFFFFF&
       Style           =   1  'Graphical
       TabIndex        =   1
-      Top             =   3360
+      Top             =   3480
       Width           =   1575
-   End
-   Begin VB.Image Image1 
-      Height          =   3060
-      Left            =   1080
-      Picture         =   "welcomepage.frx":0000
-      Top             =   -240
-      Width           =   4800
    End
    Begin VB.Label Label2 
       Alignment       =   2  'Center
@@ -59,10 +52,17 @@ Begin VB.Form welcomepage
       EndProperty
       ForeColor       =   &H00800000&
       Height          =   855
-      Left            =   0
+      Left            =   360
       TabIndex        =   0
       Top             =   2760
       Width           =   6735
+   End
+   Begin VB.Image Image1 
+      Height          =   3825
+      Left            =   600
+      Picture         =   "welcomepage.frx":0000
+      Top             =   -480
+      Width           =   6000
    End
 End
 Attribute VB_Name = "welcomepage"

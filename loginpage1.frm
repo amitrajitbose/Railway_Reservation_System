@@ -2,16 +2,16 @@ VERSION 5.00
 Begin VB.Form loginpage1 
    BackColor       =   &H00FFFFFF&
    Caption         =   "Login"
-   ClientHeight    =   2772
+   ClientHeight    =   2775
    ClientLeft      =   120
-   ClientTop       =   456
-   ClientWidth     =   4908
+   ClientTop       =   450
+   ClientWidth     =   4905
    LinkTopic       =   "Form1"
-   ScaleHeight     =   2772
-   ScaleWidth      =   4908
+   ScaleHeight     =   2775
+   ScaleWidth      =   4905
    StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton Command2 
-      BackColor       =   &H00FF8080&
+      BackColor       =   &H00E0E0E0&
       Caption         =   "SIGNUP"
       BeginProperty Font 
          Name            =   "Century Gothic"
@@ -30,11 +30,11 @@ Begin VB.Form loginpage1
       Width           =   975
    End
    Begin VB.CommandButton Command1 
-      BackColor       =   &H00FF8080&
+      BackColor       =   &H00E0E0E0&
       Caption         =   "LOGIN"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -61,7 +61,6 @@ Begin VB.Form loginpage1
       Height          =   375
       Left            =   1920
       TabIndex        =   2
-      Text            =   "Enter Username Here"
       Top             =   480
       Width           =   2655
    End
