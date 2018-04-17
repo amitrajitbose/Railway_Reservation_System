@@ -1,22 +1,23 @@
 VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Begin VB.Form page2 
-   Caption         =   "My Profile"
-   ClientHeight    =   2676
-   ClientLeft      =   108
-   ClientTop       =   456
-   ClientWidth     =   4548
+   Caption         =   "Profile"
+   ClientHeight    =   2685
+   ClientLeft      =   105
+   ClientTop       =   450
+   ClientWidth     =   4545
    LinkTopic       =   "Form1"
-   ScaleHeight     =   2676
-   ScaleWidth      =   4548
+   ScaleHeight     =   2685
+   ScaleWidth      =   4545
    StartUpPosition =   3  'Windows Default
    Begin MSAdodcLib.Adodc Adodc1 
       Height          =   330
       Left            =   120
       Top             =   2400
+      Visible         =   0   'False
       Width           =   1200
       _ExtentX        =   2117
-      _ExtentY        =   593
+      _ExtentY        =   582
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -37,7 +38,7 @@ Begin VB.Form page2
       Orientation     =   0
       Enabled         =   -1
       Connect         =   $"page2.frx":0000
-      OLEDBString     =   $"page2.frx":008F
+      OLEDBString     =   $"page2.frx":0091
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -47,7 +48,7 @@ Begin VB.Form page2
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.8
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -57,7 +58,7 @@ Begin VB.Form page2
       _Version        =   393216
    End
    Begin VB.Frame Frame1 
-      Height          =   2175
+      Height          =   2055
       Left            =   240
       TabIndex        =   1
       Top             =   0
@@ -155,11 +156,11 @@ Begin VB.Form page2
    End
    Begin VB.CommandButton Command1 
       Caption         =   "Sign Out"
-      Height          =   252
-      Left            =   1680
+      Height          =   375
+      Left            =   1560
       TabIndex        =   0
-      Top             =   2280
-      Width           =   1092
+      Top             =   2160
+      Width           =   1215
    End
 End
 Attribute VB_Name = "page2"

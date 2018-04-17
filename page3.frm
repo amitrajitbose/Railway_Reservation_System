@@ -1,36 +1,56 @@
 VERSION 5.00
 Begin VB.Form page3 
-   Caption         =   "Form1"
-   ClientHeight    =   3120
-   ClientLeft      =   108
-   ClientTop       =   456
-   ClientWidth     =   5832
+   BackColor       =   &H00FFFFFF&
+   Caption         =   "ALERT"
+   ClientHeight    =   3015
+   ClientLeft      =   105
+   ClientTop       =   450
+   ClientWidth     =   5355
    LinkTopic       =   "Form1"
-   ScaleHeight     =   3120
-   ScaleWidth      =   5832
+   ScaleHeight     =   3015
+   ScaleWidth      =   5355
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command2 
       Caption         =   "Proceed"
-      Height          =   372
-      Left            =   3840
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   11.25
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   630
+      Left            =   480
       TabIndex        =   1
-      Top             =   2280
-      Width           =   1452
+      Top             =   1440
+      Width           =   4335
    End
    Begin VB.CommandButton Command1 
-      Caption         =   "Return"
-      Height          =   372
-      Left            =   840
+      Caption         =   "Go Back"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   9.75
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      Height          =   555
+      Left            =   480
       TabIndex        =   0
-      Top             =   2280
-      Width           =   1452
+      Top             =   2160
+      Width           =   4335
    End
    Begin VB.Label Label1 
+      Alignment       =   2  'Center
       BackStyle       =   0  'Transparent
-      Caption         =   "You must know the train number to check for availability of seats."
+      Caption         =   "You must know the train number to check for availability of tickets."
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -38,11 +58,11 @@ Begin VB.Form page3
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00800000&
-      Height          =   1452
-      Left            =   1080
+      Height          =   1455
+      Left            =   720
       TabIndex        =   2
-      Top             =   360
-      Width           =   4092
+      Top             =   120
+      Width           =   4095
    End
 End
 Attribute VB_Name = "page3"
@@ -59,3 +79,5 @@ Private Sub Command2_Click()
 page4.Show
 Unload Me
 End Sub
+
+
