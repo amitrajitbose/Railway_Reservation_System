@@ -70,7 +70,7 @@ Attribute VB_GlobalNameSpace = False
 Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
-Private Sub Command1_Click()
+Public Sub Command1_Click()
 Unload Me
 End Sub
 

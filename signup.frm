@@ -1,13 +1,14 @@
 VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Begin VB.Form signup 
+   BackColor       =   &H00FFFFFF&
    Caption         =   "Signup"
-   ClientHeight    =   4152
-   ClientLeft      =   108
-   ClientTop       =   456
+   ClientHeight    =   4155
+   ClientLeft      =   105
+   ClientTop       =   450
    ClientWidth     =   7140
    LinkTopic       =   "Form1"
-   ScaleHeight     =   4152
+   ScaleHeight     =   4155
    ScaleWidth      =   7140
    StartUpPosition =   3  'Windows Default
    Begin MSAdodcLib.Adodc loginado2 
@@ -17,7 +18,7 @@ Begin VB.Form signup
       Visible         =   0   'False
       Width           =   1200
       _ExtentX        =   2117
-      _ExtentY        =   593
+      _ExtentY        =   582
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -38,7 +39,7 @@ Begin VB.Form signup
       Orientation     =   0
       Enabled         =   -1
       Connect         =   $"signup.frx":0000
-      OLEDBString     =   $"signup.frx":008F
+      OLEDBString     =   $"signup.frx":0091
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -48,7 +49,7 @@ Begin VB.Form signup
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.8
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -140,10 +141,11 @@ Begin VB.Form signup
       Width           =   4332
    End
    Begin VB.Label Label8 
+      BackStyle       =   0  'Transparent
       Caption         =   "PHONE NUMBER"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.8
+         Size            =   10.5
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -158,10 +160,11 @@ Begin VB.Form signup
       Width           =   1692
    End
    Begin VB.Label Label7 
+      BackStyle       =   0  'Transparent
       Caption         =   "EMAIL ID"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.8
+         Size            =   10.5
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -176,10 +179,11 @@ Begin VB.Form signup
       Width           =   1335
    End
    Begin VB.Label Label6 
+      BackStyle       =   0  'Transparent
       Caption         =   "DATE OF BIRTH"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -195,6 +199,7 @@ Begin VB.Form signup
    End
    Begin VB.Label Label5 
       Alignment       =   2  'Center
+      BackStyle       =   0  'Transparent
       Caption         =   "REGISTRATION"
       BeginProperty Font 
          Name            =   "Century Gothic"
@@ -213,10 +218,11 @@ Begin VB.Form signup
       Width           =   4575
    End
    Begin VB.Label Label4 
+      BackStyle       =   0  'Transparent
       Caption         =   "CONFIRM PASSWORD"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -231,10 +237,11 @@ Begin VB.Form signup
       Width           =   1455
    End
    Begin VB.Label Label3 
+      BackStyle       =   0  'Transparent
       Caption         =   "PASSWORD"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -249,10 +256,11 @@ Begin VB.Form signup
       Width           =   1575
    End
    Begin VB.Label Label2 
+      BackStyle       =   0  'Transparent
       Caption         =   "USERNAME"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -267,10 +275,11 @@ Begin VB.Form signup
       Width           =   1572
    End
    Begin VB.Label Label1 
+      BackStyle       =   0  'Transparent
       Caption         =   "NAME"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False

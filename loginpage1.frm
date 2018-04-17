@@ -3,13 +3,13 @@ Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Begin VB.Form loginpage1 
    BackColor       =   &H00FFFFFF&
    Caption         =   "Login"
-   ClientHeight    =   2772
+   ClientHeight    =   2775
    ClientLeft      =   120
-   ClientTop       =   456
-   ClientWidth     =   4908
+   ClientTop       =   450
+   ClientWidth     =   4905
    LinkTopic       =   "Form1"
-   ScaleHeight     =   2772
-   ScaleWidth      =   4908
+   ScaleHeight     =   2775
+   ScaleWidth      =   4905
    StartUpPosition =   2  'CenterScreen
    Begin MSAdodcLib.Adodc loginado 
       Height          =   330
@@ -18,7 +18,7 @@ Begin VB.Form loginpage1
       Visible         =   0   'False
       Width           =   1200
       _ExtentX        =   2117
-      _ExtentY        =   593
+      _ExtentY        =   582
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -39,7 +39,7 @@ Begin VB.Form loginpage1
       Orientation     =   0
       Enabled         =   -1
       Connect         =   $"loginpage1.frx":0000
-      OLEDBString     =   $"loginpage1.frx":008F
+      OLEDBString     =   $"loginpage1.frx":0091
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -49,7 +49,7 @@ Begin VB.Form loginpage1
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.8
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -82,7 +82,7 @@ Begin VB.Form loginpage1
       Caption         =   "LOGIN"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
