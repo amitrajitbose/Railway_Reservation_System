@@ -3,20 +3,20 @@ Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Begin VB.Form page4 
    BackColor       =   &H00FFFFFF&
    Caption         =   "Book Seats"
-   ClientHeight    =   6270
-   ClientLeft      =   105
-   ClientTop       =   450
-   ClientWidth     =   7050
+   ClientHeight    =   6264
+   ClientLeft      =   108
+   ClientTop       =   456
+   ClientWidth     =   7044
    LinkTopic       =   "Form1"
-   ScaleHeight     =   6270
-   ScaleWidth      =   7050
+   ScaleHeight     =   6264
+   ScaleWidth      =   7044
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command6 
       BackColor       =   &H00E0E0E0&
       Caption         =   "Cancel"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -51,7 +51,7 @@ Begin VB.Form page4
       Enabled         =   0   'False
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -62,7 +62,7 @@ Begin VB.Form page4
       Left            =   3600
       MaskColor       =   &H000000FF&
       TabIndex        =   12
-      Top             =   4920
+      Top             =   4680
       Width           =   2535
    End
    Begin VB.TextBox Text4 
@@ -86,7 +86,7 @@ Begin VB.Form page4
       Caption         =   "Get Total Fare"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -111,7 +111,7 @@ Begin VB.Form page4
       Caption         =   "Fare per Ticket"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -137,8 +137,8 @@ Begin VB.Form page4
       Top             =   5880
       Visible         =   0   'False
       Width           =   1215
-      _ExtentX        =   2143
-      _ExtentY        =   873
+      _ExtentX        =   2138
+      _ExtentY        =   868
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -159,7 +159,7 @@ Begin VB.Form page4
       Orientation     =   0
       Enabled         =   -1
       Connect         =   $"page4.frx":0000
-      OLEDBString     =   $"page4.frx":0090
+      OLEDBString     =   $"page4.frx":008E
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -169,7 +169,7 @@ Begin VB.Form page4
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.8
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -183,7 +183,7 @@ Begin VB.Form page4
       Caption         =   "Seats Available"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -222,7 +222,7 @@ Begin VB.Form page4
       Caption         =   "Payment Mode"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   11.25
+         Size            =   11.4
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -241,7 +241,7 @@ Begin VB.Form page4
       Caption         =   "Enter Required Seats"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -260,7 +260,7 @@ Begin VB.Form page4
       Caption         =   "Select Coach Type "
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -279,7 +279,7 @@ Begin VB.Form page4
       Caption         =   "Select Train Number"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.75
+         Size            =   9.6
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -343,6 +343,26 @@ End If
 End Sub
 
 Private Sub Command4_Click()
+If Text4.Text = "" Then
+MsgBox "Invalid !!", vbCritical, "Select from list"
+ElseIf Text4.Text = "0" Then
+MsgBox "Number of seats required unavailable", vbCritical, "Sorry!"
+Text3.Text = ""
+Text4.Text = ""
+Else
+Adodc1.RecordSource = "select * from Seats where Train_No='" + Combo1.Text + "'and Type='" + Combo2.Text + "'"
+Adodc1.Refresh
+Dim x, y As Integer
+x = Text1.Text
+y = Text3.Text
+Adodc1.Recordset.Fields("Reserved") = y
+Adodc1.Recordset.Fields("Available") = x - y
+Adodc1.Recordset.Update
+Adodc1.Refresh
+page2.Text6.Text = Combo1.Text
+page2.Text7.Text = Combo2.Text
+page2.Text8.Text = Text3.Text
+End If
 a = MsgBox("Are you sure you want to proceed to the Online Payment Portal?", vbOKCancel, "Confirm Payment")
 If a = 1 Then
 CreateObject("Wscript.Shell").Run "https://business.paytm.com/"
@@ -352,7 +372,7 @@ End Sub
 
 Private Sub Command5_Click()
 page2.Show
-Unload Me
+
 End Sub
 
 Private Sub Command6_Click()

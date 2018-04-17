@@ -1,75 +1,31 @@
 VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
-Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Begin VB.Form page2 
    Caption         =   "Profile"
-   ClientHeight    =   4155
-   ClientLeft      =   105
-   ClientTop       =   450
-   ClientWidth     =   8565
+   ClientHeight    =   6024
+   ClientLeft      =   108
+   ClientTop       =   456
+   ClientWidth     =   11028
    LinkTopic       =   "Form1"
-   ScaleHeight     =   4155
-   ScaleWidth      =   8565
+   ScaleHeight     =   6024
+   ScaleWidth      =   11028
    StartUpPosition =   3  'Windows Default
-   Begin MSDataGridLib.DataGrid DataGrid1 
-      Bindings        =   "page2.frx":0000
-      Height          =   3135
-      Left            =   5040
-      TabIndex        =   12
-      Top             =   480
-      Width           =   2655
-      _ExtentX        =   4683
-      _ExtentY        =   5530
-      _Version        =   393216
-      HeadLines       =   1
-      RowHeight       =   15
-      FormatLocked    =   -1  'True
-      BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
-         Name            =   "MS Sans Serif"
-         Size            =   8.25
-         Charset         =   0
-         Weight          =   400
-         Underline       =   0   'False
-         Italic          =   0   'False
-         Strikethrough   =   0   'False
-      EndProperty
-      ColumnCount     =   1
-      BeginProperty Column00 
-         DataField       =   "username"
-         Caption         =   ""
-         BeginProperty DataFormat {6D835690-900B-11D0-9484-00A0C91110ED} 
-            Type            =   0
-            Format          =   ""
-            HaveTrueFalseNull=   0
-            FirstDayOfWeek  =   0
-            FirstWeekOfYear =   0
-            LCID            =   16393
-            SubFormatType   =   0
-         EndProperty
-      EndProperty
-      SplitCount      =   1
-      BeginProperty Split0 
-         BeginProperty Column00 
-         EndProperty
-      EndProperty
+   Begin VB.CommandButton Command2 
+      Caption         =   "Return"
+      Height          =   372
+      Left            =   3720
+      TabIndex        =   19
+      Top             =   4920
+      Width           =   1212
    End
-   Begin MSAdodcLib.Adodc Adodc1 
-      Height          =   330
-      Left            =   120
-      Top             =   2400
+   Begin MSAdodcLib.Adodc profileado 
+      Height          =   336
+      Left            =   1320
+      Top             =   5280
       Visible         =   0   'False
       Width           =   1200
       _ExtentX        =   2117
-      _ExtentY        =   582
+      _ExtentY        =   593
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -89,8 +45,8 @@ Begin VB.Form page2
       ForeColor       =   -2147483640
       Orientation     =   0
       Enabled         =   -1
-      Connect         =   $"page2.frx":0015
-      OLEDBString     =   $"page2.frx":00A6
+      Connect         =   $"page2.frx":0000
+      OLEDBString     =   $"page2.frx":008F
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -100,7 +56,7 @@ Begin VB.Form page2
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.8
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -110,60 +66,151 @@ Begin VB.Form page2
       _Version        =   393216
    End
    Begin VB.Frame Frame1 
-      Height          =   2055
-      Left            =   240
+      Height          =   4212
+      Left            =   1200
       TabIndex        =   1
-      Top             =   0
-      Width           =   4095
+      Top             =   120
+      Width           =   6012
+      Begin VB.TextBox Text8 
+         DataSource      =   "ticketado"
+         Height          =   288
+         Left            =   1680
+         TabIndex        =   18
+         Top             =   3000
+         Width           =   2292
+      End
+      Begin VB.TextBox Text7 
+         DataSource      =   "ticketado"
+         Height          =   288
+         Left            =   1680
+         TabIndex        =   16
+         Top             =   2520
+         Width           =   2292
+      End
+      Begin VB.TextBox Text6 
+         DataSource      =   "ticketado"
+         Height          =   288
+         Left            =   1680
+         TabIndex        =   14
+         Top             =   2040
+         Width           =   2292
+      End
       Begin VB.TextBox Text5 
          DataField       =   "email"
-         DataSource      =   "Adodc1"
+         DataSource      =   "profileado"
          Height          =   285
          Left            =   1680
          TabIndex        =   11
-         Text            =   "Text5"
          Top             =   1320
          Width           =   2295
       End
       Begin VB.TextBox Text4 
          DataField       =   "dob"
-         DataSource      =   "Adodc1"
+         DataSource      =   "profileado"
          Height          =   285
          Left            =   1680
          TabIndex        =   10
-         Text            =   "Text4"
          Top             =   1080
          Width           =   2295
       End
       Begin VB.TextBox Text3 
          DataField       =   "phonenumber"
-         DataSource      =   "Adodc1"
+         DataSource      =   "profileado"
          Height          =   285
          Left            =   1680
          TabIndex        =   9
-         Text            =   "Text3"
          Top             =   840
          Width           =   2295
       End
       Begin VB.TextBox Text2 
          DataField       =   "username"
-         DataSource      =   "Adodc1"
+         DataSource      =   "profileado"
          Height          =   285
          Left            =   1680
          TabIndex        =   8
-         Text            =   "Text2"
          Top             =   600
          Width           =   2295
       End
       Begin VB.TextBox Text1 
          DataField       =   "name"
-         DataSource      =   "Adodc1"
+         DataSource      =   "profileado"
          Height          =   285
          Left            =   1680
          TabIndex        =   7
-         Text            =   "Text1"
          Top             =   360
          Width           =   2295
+      End
+      Begin VB.Label Label9 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Seats Booked"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   9.6
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   252
+         Left            =   120
+         TabIndex        =   17
+         Top             =   3000
+         Width           =   1452
+      End
+      Begin VB.Label Label8 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Coach Type"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   9.6
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   252
+         Left            =   240
+         TabIndex        =   15
+         Top             =   2520
+         Width           =   1212
+      End
+      Begin VB.Label Label7 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Train Number"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   9.6
+            Charset         =   0
+            Weight          =   400
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   252
+         Left            =   240
+         TabIndex        =   13
+         Top             =   2040
+         Width           =   1332
+      End
+      Begin VB.Label Label6 
+         BackStyle       =   0  'Transparent
+         Caption         =   "Currently Booked Ticket Details"
+         BeginProperty Font 
+            Name            =   "MS Sans Serif"
+            Size            =   9.6
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         Height          =   372
+         Left            =   840
+         TabIndex        =   12
+         Top             =   1680
+         Width           =   3252
       End
       Begin VB.Label Label5 
          Caption         =   "EMAIL"
@@ -209,9 +256,9 @@ Begin VB.Form page2
    Begin VB.CommandButton Command1 
       Caption         =   "Sign Out"
       Height          =   375
-      Left            =   1560
+      Left            =   5760
       TabIndex        =   0
-      Top             =   2160
+      Top             =   4920
       Width           =   1215
    End
 End
@@ -226,12 +273,18 @@ welcomepage.Show
 Unload Me
 End Sub
 
-Private Sub DataGrid1_Click()
-DataGrid1.SelText = pubusername
+Private Sub Command2_Click()
+Unload Me
 End Sub
 
 Private Sub Form_Load()
-Text2.Text = pubusername
+profileado.RecordSource = "select * from logindb1 where Username='" + loginpage1.Text1.Text + "'"
+profileado.Refresh
+Text1.Text = profileado.Recordset.Fields("name")
+Text2.Text = profileado.Recordset.Fields("username")
+Text3.Text = profileado.Recordset.Fields("email")
+Text4.Text = profileado.Recordset.Fields("phonenumber")
+Text5.Text = profileado.Recordset.Fields("dob")
 End Sub
 
 Private Sub Label1_Click()
