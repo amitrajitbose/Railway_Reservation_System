@@ -3,20 +3,20 @@ Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Begin VB.Form page4 
    BackColor       =   &H00FFFFFF&
    Caption         =   "Book Seats"
-   ClientHeight    =   6264
-   ClientLeft      =   108
-   ClientTop       =   456
-   ClientWidth     =   7044
+   ClientHeight    =   6270
+   ClientLeft      =   105
+   ClientTop       =   450
+   ClientWidth     =   7050
    LinkTopic       =   "Form1"
-   ScaleHeight     =   6264
-   ScaleWidth      =   7044
+   ScaleHeight     =   6270
+   ScaleWidth      =   7050
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command6 
       BackColor       =   &H00FFC0C0&
       Caption         =   "Cancel"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -35,7 +35,7 @@ Begin VB.Form page4
       Caption         =   "My Profile"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   7.8
+         Size            =   7.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -62,7 +62,7 @@ Begin VB.Form page4
       Enabled         =   0   'False
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -98,7 +98,7 @@ Begin VB.Form page4
       Caption         =   "Get Total Fare"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -123,7 +123,7 @@ Begin VB.Form page4
       Caption         =   "Fare per Ticket"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -149,8 +149,8 @@ Begin VB.Form page4
       Top             =   5880
       Visible         =   0   'False
       Width           =   1215
-      _ExtentX        =   2138
-      _ExtentY        =   868
+      _ExtentX        =   2143
+      _ExtentY        =   873
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -171,7 +171,7 @@ Begin VB.Form page4
       Orientation     =   0
       Enabled         =   -1
       Connect         =   $"page4.frx":0000
-      OLEDBString     =   $"page4.frx":008E
+      OLEDBString     =   $"page4.frx":0090
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -181,7 +181,7 @@ Begin VB.Form page4
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.8
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -195,7 +195,7 @@ Begin VB.Form page4
       Caption         =   "Seats Available"
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -234,7 +234,7 @@ Begin VB.Form page4
       Caption         =   "Payment Mode"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   11.4
+         Size            =   11.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -253,7 +253,7 @@ Begin VB.Form page4
       Caption         =   "Enter Required Seats"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -272,7 +272,7 @@ Begin VB.Form page4
       Caption         =   "Select Coach Type "
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -291,7 +291,7 @@ Begin VB.Form page4
       Caption         =   "Select Train Number"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   9.75
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
