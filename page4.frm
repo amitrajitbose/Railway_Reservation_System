@@ -378,7 +378,7 @@ End If
 a = MsgBox("Are you sure you want to proceed to the Online Payment Portal?", vbOKCancel, "Confirm Payment")
 If a = 1 Then
 CreateObject("Wscript.Shell").Run "https://business.paytm.com/"
-welcomepage.Show
+page2.Show
 Unload Me
 End If
 End Sub
