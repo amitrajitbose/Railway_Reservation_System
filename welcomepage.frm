@@ -3,24 +3,24 @@ Begin VB.Form welcomepage
    BackColor       =   &H00FFFFFF&
    BorderStyle     =   1  'Fixed Single
    Caption         =   "Indian Railways"
-   ClientHeight    =   4248
-   ClientLeft      =   48
-   ClientTop       =   372
-   ClientWidth     =   7308
+   ClientHeight    =   4245
+   ClientLeft      =   45
+   ClientTop       =   375
+   ClientWidth     =   7305
    FillColor       =   &H00C00000&
    ForeColor       =   &H00C00000&
    LinkTopic       =   "Form1"
    MaxButton       =   0   'False
    MinButton       =   0   'False
-   ScaleHeight     =   4248
-   ScaleWidth      =   7308
+   ScaleHeight     =   4245
+   ScaleWidth      =   7305
    StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton Command2 
       BackColor       =   &H00FFC0C0&
       Caption         =   "Proceed"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.2
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -40,7 +40,7 @@ Begin VB.Form welcomepage
       Caption         =   "Exit"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.2
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -76,11 +76,11 @@ Begin VB.Form welcomepage
       Width           =   6735
    End
    Begin VB.Image Image1 
-      Height          =   3060
-      Left            =   1200
+      Height          =   3825
+      Left            =   600
       Picture         =   "welcomepage.frx":0000
       Top             =   -480
-      Width           =   4800
+      Width           =   6000
    End
 End
 Attribute VB_Name = "welcomepage"

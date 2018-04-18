@@ -2,20 +2,20 @@ VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Begin VB.Form page2 
    Caption         =   "Profile"
-   ClientHeight    =   6024
-   ClientLeft      =   108
-   ClientTop       =   456
-   ClientWidth     =   11028
+   ClientHeight    =   6030
+   ClientLeft      =   105
+   ClientTop       =   450
+   ClientWidth     =   9120
    LinkTopic       =   "Form1"
-   ScaleHeight     =   6024
-   ScaleWidth      =   11028
+   ScaleHeight     =   6030
+   ScaleWidth      =   9120
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command3 
       BackColor       =   &H00FFC0C0&
       Caption         =   "Change Password"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.2
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -23,7 +23,7 @@ Begin VB.Form page2
          Strikethrough   =   0   'False
       EndProperty
       Height          =   372
-      Left            =   3240
+      Left            =   3600
       Style           =   1  'Graphical
       TabIndex        =   20
       Top             =   4920
@@ -34,7 +34,7 @@ Begin VB.Form page2
       Caption         =   "Return"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.2
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -42,7 +42,7 @@ Begin VB.Form page2
          Strikethrough   =   0   'False
       EndProperty
       Height          =   372
-      Left            =   1560
+      Left            =   1920
       Style           =   1  'Graphical
       TabIndex        =   19
       Top             =   4920
@@ -55,7 +55,7 @@ Begin VB.Form page2
       Visible         =   0   'False
       Width           =   1200
       _ExtentX        =   2117
-      _ExtentY        =   593
+      _ExtentY        =   582
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -76,7 +76,7 @@ Begin VB.Form page2
       Orientation     =   0
       Enabled         =   -1
       Connect         =   $"page2.frx":0000
-      OLEDBString     =   $"page2.frx":008F
+      OLEDBString     =   $"page2.frx":0091
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -86,7 +86,7 @@ Begin VB.Form page2
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   7.8
+         Size            =   8.25
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -104,26 +104,26 @@ Begin VB.Form page2
       Begin VB.TextBox Text8 
          DataSource      =   "ticketado"
          Height          =   288
-         Left            =   1680
+         Left            =   1920
          TabIndex        =   18
          Top             =   3000
-         Width           =   2292
+         Width           =   2655
       End
       Begin VB.TextBox Text7 
          DataSource      =   "ticketado"
          Height          =   288
-         Left            =   1680
+         Left            =   1920
          TabIndex        =   16
          Top             =   2520
-         Width           =   2292
+         Width           =   2655
       End
       Begin VB.TextBox Text6 
          DataSource      =   "ticketado"
          Height          =   288
-         Left            =   1680
+         Left            =   1920
          TabIndex        =   14
          Top             =   2040
-         Width           =   2292
+         Width           =   2655
       End
       Begin VB.TextBox Text5 
          DataField       =   "email"
@@ -175,7 +175,7 @@ Begin VB.Form page2
          Caption         =   "Seats Booked"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.2
+            Size            =   10.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -194,7 +194,7 @@ Begin VB.Form page2
          Caption         =   "Coach Type"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.2
+            Size            =   10.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -213,7 +213,7 @@ Begin VB.Form page2
          Caption         =   "Train Number"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.2
+            Size            =   10.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -232,7 +232,7 @@ Begin VB.Form page2
          Caption         =   "Currently Booked Ticket Details"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.2
+            Size            =   10.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -240,17 +240,17 @@ Begin VB.Form page2
             Strikethrough   =   0   'False
          EndProperty
          ForeColor       =   &H00800000&
-         Height          =   372
-         Left            =   840
+         Height          =   375
+         Left            =   720
          TabIndex        =   12
          Top             =   1680
-         Width           =   3252
+         Width           =   3255
       End
       Begin VB.Label Label5 
          Caption         =   "EMAIL"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.2
+            Size            =   10.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -268,7 +268,7 @@ Begin VB.Form page2
          Caption         =   "DATE OF BIRTH"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.2
+            Size            =   10.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -286,7 +286,7 @@ Begin VB.Form page2
          Caption         =   "PHONE NUMBER"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.2
+            Size            =   10.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -304,7 +304,7 @@ Begin VB.Form page2
          Caption         =   "USERNAME"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.2
+            Size            =   10.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -323,7 +323,7 @@ Begin VB.Form page2
          Caption         =   "NAME"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.2
+            Size            =   10.5
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -343,7 +343,7 @@ Begin VB.Form page2
       Caption         =   "Sign Out"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.2
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -351,7 +351,7 @@ Begin VB.Form page2
          Strikethrough   =   0   'False
       EndProperty
       Height          =   375
-      Left            =   5760
+      Left            =   6120
       Style           =   1  'Graphical
       TabIndex        =   0
       Top             =   4920

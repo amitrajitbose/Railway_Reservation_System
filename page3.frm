@@ -2,20 +2,20 @@ VERSION 5.00
 Begin VB.Form page3 
    BackColor       =   &H00FFFFFF&
    Caption         =   "ALERT"
-   ClientHeight    =   3384
-   ClientLeft      =   108
-   ClientTop       =   456
-   ClientWidth     =   6828
+   ClientHeight    =   3390
+   ClientLeft      =   105
+   ClientTop       =   450
+   ClientWidth     =   6825
    LinkTopic       =   "Form1"
-   ScaleHeight     =   3384
-   ScaleWidth      =   6828
+   ScaleHeight     =   3390
+   ScaleWidth      =   6825
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command2 
       BackColor       =   &H00FFC0C0&
       Caption         =   "Proceed"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   11.4
+         Size            =   11.25
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -23,18 +23,18 @@ Begin VB.Form page3
          Strikethrough   =   0   'False
       EndProperty
       Height          =   630
-      Left            =   4200
+      Left            =   3720
       Style           =   1  'Graphical
       TabIndex        =   1
       Top             =   2400
-      Width           =   2052
+      Width           =   2415
    End
    Begin VB.CommandButton Command1 
       BackColor       =   &H00FFC0C0&
       Caption         =   "Go Back"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.2
+         Size            =   10.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -54,7 +54,7 @@ Begin VB.Form page3
       Caption         =   "You must know the train number to check for availability of tickets."
       BeginProperty Font 
          Name            =   "MS Sans Serif"
-         Size            =   13.8
+         Size            =   13.5
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
