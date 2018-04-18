@@ -4,13 +4,13 @@ Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Begin VB.Form page1 
    BackColor       =   &H00FFFFFF&
    Caption         =   "Train Details"
-   ClientHeight    =   6072
+   ClientHeight    =   5592
    ClientLeft      =   120
    ClientTop       =   456
-   ClientWidth     =   10440
+   ClientWidth     =   9000
    LinkTopic       =   "Form1"
-   ScaleHeight     =   6072
-   ScaleWidth      =   10440
+   ScaleHeight     =   5592
+   ScaleWidth      =   9000
    StartUpPosition =   2  'CenterScreen
    Begin MSDataGridLib.DataGrid DataGrid1 
       Bindings        =   "8.frx":0000
@@ -261,7 +261,7 @@ Attribute VB_Exposed = False
 
 Private Sub Command1_Click()
 page2.Show
-
+Unload Me
 End Sub
 
 Private Sub Command2_Click()

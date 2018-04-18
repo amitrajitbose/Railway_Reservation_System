@@ -385,7 +385,7 @@ End Sub
 
 Private Sub Command5_Click()
 page2.Show
-
+Unload Me
 End Sub
 
 Private Sub Command6_Click()

@@ -2,13 +2,13 @@ VERSION 5.00
 Begin VB.Form page3 
    BackColor       =   &H00FFFFFF&
    Caption         =   "ALERT"
-   ClientHeight    =   3684
+   ClientHeight    =   3384
    ClientLeft      =   108
    ClientTop       =   456
-   ClientWidth     =   7716
+   ClientWidth     =   6828
    LinkTopic       =   "Form1"
-   ScaleHeight     =   3684
-   ScaleWidth      =   7716
+   ScaleHeight     =   3384
+   ScaleWidth      =   6828
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command2 
       BackColor       =   &H00FFC0C0&
@@ -23,11 +23,11 @@ Begin VB.Form page3
          Strikethrough   =   0   'False
       EndProperty
       Height          =   630
-      Left            =   480
+      Left            =   4200
       Style           =   1  'Graphical
       TabIndex        =   1
-      Top             =   1440
-      Width           =   4335
+      Top             =   2400
+      Width           =   2052
    End
    Begin VB.CommandButton Command1 
       BackColor       =   &H00FFC0C0&
@@ -41,12 +41,12 @@ Begin VB.Form page3
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
-      Height          =   555
-      Left            =   480
+      Height          =   672
+      Left            =   360
       Style           =   1  'Graphical
       TabIndex        =   0
-      Top             =   2160
-      Width           =   4335
+      Top             =   2400
+      Width           =   2412
    End
    Begin VB.Label Label1 
       Alignment       =   2  'Center
@@ -62,11 +62,11 @@ Begin VB.Form page3
          Strikethrough   =   0   'False
       EndProperty
       ForeColor       =   &H00800000&
-      Height          =   1455
-      Left            =   720
+      Height          =   1692
+      Left            =   1200
       TabIndex        =   2
-      Top             =   120
-      Width           =   4095
+      Top             =   480
+      Width           =   4092
    End
 End
 Attribute VB_Name = "page3"
