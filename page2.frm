@@ -11,17 +11,39 @@ Begin VB.Form page2
    ScaleWidth      =   11028
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command3 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Change Password"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   10.2
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   372
       Left            =   3240
+      Style           =   1  'Graphical
       TabIndex        =   20
       Top             =   4920
       Width           =   2052
    End
    Begin VB.CommandButton Command2 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Return"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   10.2
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   372
       Left            =   1560
+      Style           =   1  'Graphical
       TabIndex        =   19
       Top             =   4920
       Width           =   1212
@@ -75,9 +97,9 @@ Begin VB.Form page2
    End
    Begin VB.Frame Frame1 
       Height          =   4212
-      Left            =   1200
+      Left            =   1560
       TabIndex        =   1
-      Top             =   120
+      Top             =   240
       Width           =   6012
       Begin VB.TextBox Text8 
          DataSource      =   "ticketado"
@@ -107,59 +129,60 @@ Begin VB.Form page2
          DataField       =   "email"
          DataSource      =   "profileado"
          Height          =   285
-         Left            =   1680
+         Left            =   1920
          TabIndex        =   11
          Top             =   1320
-         Width           =   2295
+         Width           =   2652
       End
       Begin VB.TextBox Text4 
          DataField       =   "dob"
          DataSource      =   "profileado"
          Height          =   285
-         Left            =   1680
+         Left            =   1920
          TabIndex        =   10
          Top             =   1080
-         Width           =   2295
+         Width           =   2652
       End
       Begin VB.TextBox Text3 
          DataField       =   "phonenumber"
          DataSource      =   "profileado"
          Height          =   285
-         Left            =   1680
+         Left            =   1920
          TabIndex        =   9
          Top             =   840
-         Width           =   2295
+         Width           =   2652
       End
       Begin VB.TextBox Text2 
          DataField       =   "username"
          DataSource      =   "profileado"
          Height          =   285
-         Left            =   1680
+         Left            =   1920
          TabIndex        =   8
          Top             =   600
-         Width           =   2295
+         Width           =   2652
       End
       Begin VB.TextBox Text1 
          DataField       =   "name"
          DataSource      =   "profileado"
          Height          =   285
-         Left            =   1680
+         Left            =   1920
          TabIndex        =   7
          Top             =   360
-         Width           =   2295
+         Width           =   2652
       End
       Begin VB.Label Label9 
          BackStyle       =   0  'Transparent
          Caption         =   "Seats Booked"
          BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.6
+            Name            =   "Century Gothic"
+            Size            =   10.2
             Charset         =   0
-            Weight          =   400
+            Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         ForeColor       =   &H00800000&
          Height          =   252
          Left            =   120
          TabIndex        =   17
@@ -170,16 +193,17 @@ Begin VB.Form page2
          BackStyle       =   0  'Transparent
          Caption         =   "Coach Type"
          BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.6
+            Name            =   "Century Gothic"
+            Size            =   10.2
             Charset         =   0
-            Weight          =   400
+            Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         ForeColor       =   &H00800000&
          Height          =   252
-         Left            =   240
+         Left            =   120
          TabIndex        =   15
          Top             =   2520
          Width           =   1212
@@ -188,16 +212,17 @@ Begin VB.Form page2
          BackStyle       =   0  'Transparent
          Caption         =   "Train Number"
          BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.6
+            Name            =   "Century Gothic"
+            Size            =   10.2
             Charset         =   0
-            Weight          =   400
+            Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         ForeColor       =   &H00800000&
          Height          =   252
-         Left            =   240
+         Left            =   120
          TabIndex        =   13
          Top             =   2040
          Width           =   1332
@@ -206,14 +231,15 @@ Begin VB.Form page2
          BackStyle       =   0  'Transparent
          Caption         =   "Currently Booked Ticket Details"
          BeginProperty Font 
-            Name            =   "MS Sans Serif"
-            Size            =   9.6
+            Name            =   "Century Gothic"
+            Size            =   10.2
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
             Italic          =   0   'False
             Strikethrough   =   0   'False
          EndProperty
+         ForeColor       =   &H00800000&
          Height          =   372
          Left            =   840
          TabIndex        =   12
@@ -222,49 +248,111 @@ Begin VB.Form page2
       End
       Begin VB.Label Label5 
          Caption         =   "EMAIL"
-         Height          =   255
+         BeginProperty Font 
+            Name            =   "Century Gothic"
+            Size            =   10.2
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   252
          Left            =   240
          TabIndex        =   6
          Top             =   1320
-         Width           =   615
+         Width           =   972
       End
       Begin VB.Label Label4 
          Caption         =   "DATE OF BIRTH"
-         Height          =   255
+         BeginProperty Font 
+            Name            =   "Century Gothic"
+            Size            =   10.2
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   252
          Left            =   240
          TabIndex        =   5
          Top             =   1080
-         Width           =   1455
+         Width           =   1692
       End
       Begin VB.Label Label3 
          Caption         =   "PHONE NUMBER"
-         Height          =   255
+         BeginProperty Font 
+            Name            =   "Century Gothic"
+            Size            =   10.2
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   252
          Left            =   240
          TabIndex        =   4
          Top             =   840
-         Width           =   1695
+         Width           =   1692
       End
       Begin VB.Label Label2 
          Caption         =   "USERNAME"
-         Height          =   255
+         BeginProperty Font 
+            Name            =   "Century Gothic"
+            Size            =   10.2
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   252
          Left            =   240
          TabIndex        =   3
          Top             =   600
-         Width           =   975
+         Width           =   1212
       End
       Begin VB.Label Label1 
+         BackStyle       =   0  'Transparent
          Caption         =   "NAME"
-         Height          =   255
+         BeginProperty Font 
+            Name            =   "Century Gothic"
+            Size            =   10.2
+            Charset         =   0
+            Weight          =   700
+            Underline       =   0   'False
+            Italic          =   0   'False
+            Strikethrough   =   0   'False
+         EndProperty
+         ForeColor       =   &H00800000&
+         Height          =   252
          Left            =   240
          TabIndex        =   2
          Top             =   360
-         Width           =   495
+         Width           =   1332
       End
    End
    Begin VB.CommandButton Command1 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Sign Out"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   10.2
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   375
       Left            =   5760
+      Style           =   1  'Graphical
       TabIndex        =   0
       Top             =   4920
       Width           =   1215
@@ -290,16 +378,16 @@ ChangePassword.Show
 End Sub
 
 Private Sub Form_Load()
-profileado.RecordSource = "select * from logindb1 where Username='" + loginpage1.Text1.Text + "'"
+profileado.RecordSource = "select * from logindb1 where Username='" + page2.Text2.Text + "'"
 profileado.Refresh
 Text1.Text = profileado.Recordset.Fields("name")
-Text2.Text = profileado.Recordset.Fields("username")
-Text3.Text = profileado.Recordset.Fields("email")
-Text4.Text = profileado.Recordset.Fields("phonenumber")
-Text5.Text = profileado.Recordset.Fields("dob")
+Text5.Text = profileado.Recordset.Fields("email")
+Text3.Text = profileado.Recordset.Fields("phonenumber")
+Text4.Text = profileado.Recordset.Fields("dob")
 End Sub
 
 Private Sub Label1_Click()
 Label1.Caption = "Hello"
 End Sub
+
 

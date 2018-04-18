@@ -11,6 +11,7 @@ Begin VB.Form page3
    ScaleWidth      =   7716
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command2 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Proceed"
       BeginProperty Font 
          Name            =   "Century Gothic"
@@ -23,23 +24,26 @@ Begin VB.Form page3
       EndProperty
       Height          =   630
       Left            =   480
+      Style           =   1  'Graphical
       TabIndex        =   1
       Top             =   1440
       Width           =   4335
    End
    Begin VB.CommandButton Command1 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Go Back"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   10.2
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
       Height          =   555
       Left            =   480
+      Style           =   1  'Graphical
       TabIndex        =   0
       Top             =   2160
       Width           =   4335

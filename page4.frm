@@ -12,7 +12,7 @@ Begin VB.Form page4
    ScaleWidth      =   7044
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command6 
-      BackColor       =   &H00E0E0E0&
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Cancel"
       BeginProperty Font 
          Name            =   "Century Gothic"
@@ -25,15 +25,26 @@ Begin VB.Form page4
       EndProperty
       Height          =   735
       Left            =   720
+      Style           =   1  'Graphical
       TabIndex        =   16
       Top             =   4920
       Width           =   2535
    End
    Begin VB.CommandButton Command5 
-      BackColor       =   &H00E0E0E0&
+      BackColor       =   &H00FFC0C0&
       Caption         =   "My Profile"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   7.8
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   375
       Left            =   5640
+      Style           =   1  'Graphical
       TabIndex        =   15
       Top             =   0
       Width           =   1215
@@ -46,7 +57,7 @@ Begin VB.Form page4
       Width           =   2775
    End
    Begin VB.CommandButton Command4 
-      BackColor       =   &H00E0E0E0&
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Book and Pay"
       Enabled         =   0   'False
       BeginProperty Font 
@@ -61,8 +72,9 @@ Begin VB.Form page4
       Height          =   735
       Left            =   3600
       MaskColor       =   &H000000FF&
+      Style           =   1  'Graphical
       TabIndex        =   12
-      Top             =   4680
+      Top             =   4920
       Width           =   2535
    End
    Begin VB.TextBox Text4 
@@ -367,6 +379,7 @@ a = MsgBox("Are you sure you want to proceed to the Online Payment Portal?", vbO
 If a = 1 Then
 CreateObject("Wscript.Shell").Run "https://business.paytm.com/"
 welcomepage.Show
+Unload Me
 End If
 End Sub
 

@@ -59,17 +59,39 @@ Begin VB.Form signup
       _Version        =   393216
    End
    Begin VB.CommandButton Command2 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "CANCEL"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   10.2
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   375
       Left            =   3960
+      Style           =   1  'Graphical
       TabIndex        =   16
       Top             =   3600
       Width           =   2655
    End
    Begin VB.CommandButton Command1 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "REGISTER"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   10.2
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   375
       Left            =   1080
+      Style           =   1  'Graphical
       TabIndex        =   15
       Top             =   3600
       Width           =   2775
