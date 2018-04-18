@@ -10,10 +10,18 @@ Begin VB.Form page2
    ScaleHeight     =   6024
    ScaleWidth      =   11028
    StartUpPosition =   3  'Windows Default
+   Begin VB.CommandButton Command3 
+      Caption         =   "Change Password"
+      Height          =   372
+      Left            =   3240
+      TabIndex        =   20
+      Top             =   4920
+      Width           =   2052
+   End
    Begin VB.CommandButton Command2 
       Caption         =   "Return"
       Height          =   372
-      Left            =   3720
+      Left            =   1560
       TabIndex        =   19
       Top             =   4920
       Width           =   1212
@@ -21,7 +29,7 @@ Begin VB.Form page2
    Begin MSAdodcLib.Adodc profileado 
       Height          =   336
       Left            =   1320
-      Top             =   5280
+      Top             =   5520
       Visible         =   0   'False
       Width           =   1200
       _ExtentX        =   2117
@@ -275,6 +283,10 @@ End Sub
 
 Private Sub Command2_Click()
 Unload Me
+End Sub
+
+Private Sub Command3_Click()
+ChangePassword.Show
 End Sub
 
 Private Sub Form_Load()
