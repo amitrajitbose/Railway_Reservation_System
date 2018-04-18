@@ -58,9 +58,20 @@ Begin VB.Form ChangePassword
       _Version        =   393216
    End
    Begin VB.CommandButton Command1 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Change"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   10.2
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   372
       Left            =   2640
+      Style           =   1  'Graphical
       TabIndex        =   6
       Top             =   3000
       Width           =   1932
@@ -68,7 +79,9 @@ Begin VB.Form ChangePassword
    Begin VB.TextBox Text3 
       DataSource      =   "Adodc1"
       Height          =   492
+      IMEMode         =   3  'DISABLE
       Left            =   3960
+      PasswordChar    =   "*"
       TabIndex        =   5
       Top             =   2160
       Width           =   3012
@@ -76,7 +89,9 @@ Begin VB.Form ChangePassword
    Begin VB.TextBox Text2 
       DataSource      =   "Adodc1"
       Height          =   612
+      IMEMode         =   3  'DISABLE
       Left            =   3960
+      PasswordChar    =   "*"
       TabIndex        =   3
       Top             =   1200
       Width           =   3012
@@ -84,14 +99,26 @@ Begin VB.Form ChangePassword
    Begin VB.TextBox Text1 
       DataSource      =   "Adodc1"
       Height          =   492
+      IMEMode         =   3  'DISABLE
       Left            =   3960
+      PasswordChar    =   "*"
       TabIndex        =   1
       Top             =   240
       Width           =   3012
    End
    Begin VB.Label Label3 
       BackStyle       =   0  'Transparent
-      Caption         =   "Confirm Password"
+      Caption         =   "Confirm Password :"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   10.2
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00800000&
       Height          =   372
       Left            =   360
       TabIndex        =   4
@@ -100,7 +127,17 @@ Begin VB.Form ChangePassword
    End
    Begin VB.Label Label2 
       BackStyle       =   0  'Transparent
-      Caption         =   "Enter New Password"
+      Caption         =   "Enter New Password :"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   10.2
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00800000&
       Height          =   492
       Left            =   360
       TabIndex        =   2
@@ -109,7 +146,17 @@ Begin VB.Form ChangePassword
    End
    Begin VB.Label Label1 
       BackStyle       =   0  'Transparent
-      Caption         =   "Current Password"
+      Caption         =   "Enter Current Password :"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   10.2
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00800000&
       Height          =   612
       Left            =   360
       TabIndex        =   0
@@ -123,19 +170,19 @@ Attribute VB_Creatable = False
 Attribute VB_PredeclaredId = True
 Attribute VB_Exposed = False
 Private Sub Command1_Click()
-Adodc1.RecordSource = "select * from logindb1 where username='" + loginpage1.Text1.Text + "'"
+Adodc1.RecordSource = "select * from logindb1 where username='" + page2.Text2.Text + "'"
 Adodc1.Refresh
-Dim a, b As Integer
-a = Text2.Text
-b = Text3.Text
-If a = b Then
-Adodc1.Recordset.Fields("password") = b
+If Text1.Text = Adodc1.Recordset.Fields("password") Then
+If Text2.Text = Text3.Text Then
+Adodc1.Recordset.Fields("password") = Text3.Text
 Adodc1.Recordset.Update
 MsgBox "Password changed"
+Else
+MsgBox "Passwords do not match "
+End If
+Else
+MsgBox "Enter correct current password"
 End If
 End Sub
 
-Private Sub Form_Load()
-Adodc1.RecordSource = "select * from logindb1 where username='" + loginpage1.Text1.Text + "'and password='" + loginpage1.Text2.Text + "'"
-Text1.Text = Adodc1.Recordset.Fields("password")
-End Sub
+

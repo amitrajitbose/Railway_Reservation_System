@@ -78,10 +78,11 @@ Begin VB.Form page1
       EndProperty
    End
    Begin VB.CommandButton Command3 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Book Seats"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Name            =   "Century Gothic"
+         Size            =   10.2
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -90,6 +91,7 @@ Begin VB.Form page1
       EndProperty
       Height          =   600
       Left            =   4680
+      Style           =   1  'Graphical
       TabIndex        =   6
       Top             =   1920
       Width           =   3012
@@ -142,10 +144,11 @@ Begin VB.Form page1
       _Version        =   393216
    End
    Begin VB.CommandButton Command2 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "Get Details"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Name            =   "Century Gothic"
+         Size            =   10.2
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -154,6 +157,7 @@ Begin VB.Form page1
       EndProperty
       Height          =   615
       Left            =   960
+      Style           =   1  'Graphical
       TabIndex        =   5
       Top             =   1920
       Width           =   3015
@@ -173,7 +177,17 @@ Begin VB.Form page1
       Width           =   3735
    End
    Begin VB.CommandButton Command1 
+      BackColor       =   &H00FFC0C0&
       Caption         =   "My Profile"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   7.8
+         Charset         =   0
+         Weight          =   700
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
       Height          =   315
       Left            =   6840
       Style           =   1  'Graphical
@@ -184,6 +198,16 @@ Begin VB.Form page1
    Begin VB.Label Label3 
       BackStyle       =   0  'Transparent
       Caption         =   "*By proceeding you agree to accept the terms and conditions of Indian Railways, Click here to know more"
+      BeginProperty Font 
+         Name            =   "Century Gothic"
+         Size            =   9
+         Charset         =   0
+         Weight          =   400
+         Underline       =   0   'False
+         Italic          =   0   'False
+         Strikethrough   =   0   'False
+      EndProperty
+      ForeColor       =   &H00800000&
       Height          =   612
       Left            =   480
       TabIndex        =   8
@@ -194,14 +218,15 @@ Begin VB.Form page1
       BackStyle       =   0  'Transparent
       Caption         =   "Enter Destination Station"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Name            =   "Century Gothic"
+         Size            =   10.2
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H00800000&
       Height          =   735
       Left            =   960
       TabIndex        =   2
@@ -212,14 +237,15 @@ Begin VB.Form page1
       BackStyle       =   0  'Transparent
       Caption         =   "Enter Source Station"
       BeginProperty Font 
-         Name            =   "MS Sans Serif"
-         Size            =   9.6
+         Name            =   "Century Gothic"
+         Size            =   10.2
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
+      ForeColor       =   &H00800000&
       Height          =   495
       Left            =   960
       TabIndex        =   1

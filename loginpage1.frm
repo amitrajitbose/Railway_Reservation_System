@@ -3,13 +3,13 @@ Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Begin VB.Form loginpage1 
    BackColor       =   &H00FFFFFF&
    Caption         =   "Login"
-   ClientHeight    =   2772
+   ClientHeight    =   3372
    ClientLeft      =   120
    ClientTop       =   456
-   ClientWidth     =   4908
+   ClientWidth     =   7812
    LinkTopic       =   "Form1"
-   ScaleHeight     =   2772
-   ScaleWidth      =   4908
+   ScaleHeight     =   3372
+   ScaleWidth      =   7812
    StartUpPosition =   2  'CenterScreen
    Begin MSAdodcLib.Adodc loginado 
       Height          =   330
@@ -59,38 +59,39 @@ Begin VB.Form loginpage1
       _Version        =   393216
    End
    Begin VB.CommandButton Command2 
-      BackColor       =   &H00E0E0E0&
+      BackColor       =   &H00FFC0C0&
       Caption         =   "SIGNUP"
       BeginProperty Font 
          Name            =   "Century Gothic"
          Size            =   9
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
       Height          =   375
-      Left            =   2760
+      Left            =   2880
       Style           =   1  'Graphical
       TabIndex        =   5
       Top             =   1800
       Width           =   975
    End
    Begin VB.CommandButton Command1 
-      BackColor       =   &H00E0E0E0&
+      BackColor       =   &H00FFC0C0&
       Caption         =   "LOGIN"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   9.6
+         Size            =   10.2
          Charset         =   0
-         Weight          =   400
+         Weight          =   700
          Underline       =   0   'False
          Italic          =   0   'False
          Strikethrough   =   0   'False
       EndProperty
       Height          =   375
       Left            =   1080
+      MaskColor       =   &H00FF8080&
       Style           =   1  'Graphical
       TabIndex        =   4
       Top             =   1800
@@ -194,7 +195,9 @@ loginpage1.Show
 Else
 MsgBox "LOGIN SUCCESSFUL", , "LOGGED IN"
 page1.Show
+page2.Text2.Text = Text1.Text
 Unload Me
+
 End If
 End Sub
 
