@@ -3,13 +3,13 @@ Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Begin VB.Form loginpage1 
    BackColor       =   &H00FFFFFF&
    Caption         =   "Login"
-   ClientHeight    =   2985
+   ClientHeight    =   2976
    ClientLeft      =   120
-   ClientTop       =   450
-   ClientWidth     =   5310
+   ClientTop       =   456
+   ClientWidth     =   5316
    LinkTopic       =   "Form1"
-   ScaleHeight     =   2985
-   ScaleWidth      =   5310
+   ScaleHeight     =   2976
+   ScaleWidth      =   5316
    StartUpPosition =   2  'CenterScreen
    Begin MSAdodcLib.Adodc loginado 
       Height          =   330
@@ -18,7 +18,7 @@ Begin VB.Form loginpage1
       Visible         =   0   'False
       Width           =   1200
       _ExtentX        =   2117
-      _ExtentY        =   582
+      _ExtentY        =   593
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -39,7 +39,7 @@ Begin VB.Form loginpage1
       Orientation     =   0
       Enabled         =   -1
       Connect         =   $"loginpage1.frx":0000
-      OLEDBString     =   $"loginpage1.frx":0091
+      OLEDBString     =   $"loginpage1.frx":008F
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -49,7 +49,7 @@ Begin VB.Form loginpage1
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.8
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -82,7 +82,7 @@ Begin VB.Form loginpage1
       Caption         =   "LOGIN"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -195,7 +195,6 @@ loginpage1.Show
 Else
 MsgBox "LOGIN SUCCESSFUL", , "LOGGED IN"
 page1.Show
-page2.Text2.Text = Text1.Text
 Unload Me
 
 End If

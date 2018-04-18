@@ -2,12 +2,12 @@ VERSION 5.00
 Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Begin VB.Form page2 
    Caption         =   "Profile"
-   ClientHeight    =   6030
-   ClientLeft      =   105
-   ClientTop       =   450
+   ClientHeight    =   6024
+   ClientLeft      =   108
+   ClientTop       =   456
    ClientWidth     =   9120
    LinkTopic       =   "Form1"
-   ScaleHeight     =   6030
+   ScaleHeight     =   6024
    ScaleWidth      =   9120
    StartUpPosition =   3  'Windows Default
    Begin VB.CommandButton Command3 
@@ -15,7 +15,7 @@ Begin VB.Form page2
       Caption         =   "Change Password"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -34,7 +34,7 @@ Begin VB.Form page2
       Caption         =   "Return"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -55,7 +55,7 @@ Begin VB.Form page2
       Visible         =   0   'False
       Width           =   1200
       _ExtentX        =   2117
-      _ExtentY        =   582
+      _ExtentY        =   593
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -76,7 +76,7 @@ Begin VB.Form page2
       Orientation     =   0
       Enabled         =   -1
       Connect         =   $"page2.frx":0000
-      OLEDBString     =   $"page2.frx":0091
+      OLEDBString     =   $"page2.frx":008F
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -86,7 +86,7 @@ Begin VB.Form page2
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.8
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -175,7 +175,7 @@ Begin VB.Form page2
          Caption         =   "Seats Booked"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.5
+            Size            =   10.8
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -194,7 +194,7 @@ Begin VB.Form page2
          Caption         =   "Coach Type"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.5
+            Size            =   10.8
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -213,7 +213,7 @@ Begin VB.Form page2
          Caption         =   "Train Number"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.5
+            Size            =   10.8
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -232,7 +232,7 @@ Begin VB.Form page2
          Caption         =   "Currently Booked Ticket Details"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.5
+            Size            =   10.8
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -250,7 +250,7 @@ Begin VB.Form page2
          Caption         =   "EMAIL"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.5
+            Size            =   10.8
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -268,7 +268,7 @@ Begin VB.Form page2
          Caption         =   "DATE OF BIRTH"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.5
+            Size            =   10.8
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -286,7 +286,7 @@ Begin VB.Form page2
          Caption         =   "PHONE NUMBER"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.5
+            Size            =   10.8
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -304,7 +304,7 @@ Begin VB.Form page2
          Caption         =   "USERNAME"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.5
+            Size            =   10.8
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -323,7 +323,7 @@ Begin VB.Form page2
          Caption         =   "NAME"
          BeginProperty Font 
             Name            =   "Century Gothic"
-            Size            =   10.5
+            Size            =   10.8
             Charset         =   0
             Weight          =   700
             Underline       =   0   'False
@@ -343,7 +343,7 @@ Begin VB.Form page2
       Caption         =   "Sign Out"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -378,9 +378,10 @@ ChangePassword.Show
 End Sub
 
 Private Sub Form_Load()
-profileado.RecordSource = "select * from logindb1 where Username='" + page2.Text2.Text + "'"
+profileado.RecordSource = "select * from logindb1 where username='" + loginpage1.Text1.Text + "'"
 profileado.Refresh
 Text1.Text = profileado.Recordset.Fields("name")
+Text2.Text = profileado.Recordset.Fields("username")
 Text5.Text = profileado.Recordset.Fields("email")
 Text3.Text = profileado.Recordset.Fields("phonenumber")
 Text4.Text = profileado.Recordset.Fields("dob")

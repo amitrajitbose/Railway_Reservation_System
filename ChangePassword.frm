@@ -4,12 +4,12 @@ Begin VB.Form ChangePassword
    BackColor       =   &H00FFFFFF&
    Caption         =   "Form1"
    ClientHeight    =   3660
-   ClientLeft      =   105
-   ClientTop       =   450
-   ClientWidth     =   7410
+   ClientLeft      =   108
+   ClientTop       =   456
+   ClientWidth     =   7404
    LinkTopic       =   "Form1"
    ScaleHeight     =   3660
-   ScaleWidth      =   7410
+   ScaleWidth      =   7404
    StartUpPosition =   3  'Windows Default
    Begin MSAdodcLib.Adodc Adodc1 
       Height          =   312
@@ -17,8 +17,8 @@ Begin VB.Form ChangePassword
       Top             =   3120
       Visible         =   0   'False
       Width           =   1332
-      _ExtentX        =   2355
-      _ExtentY        =   582
+      _ExtentX        =   2350
+      _ExtentY        =   550
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -39,7 +39,7 @@ Begin VB.Form ChangePassword
       Orientation     =   0
       Enabled         =   -1
       Connect         =   $"ChangePassword.frx":0000
-      OLEDBString     =   $"ChangePassword.frx":0091
+      OLEDBString     =   $"ChangePassword.frx":008F
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -49,7 +49,7 @@ Begin VB.Form ChangePassword
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.8
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -63,7 +63,7 @@ Begin VB.Form ChangePassword
       Caption         =   "Change"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -112,7 +112,7 @@ Begin VB.Form ChangePassword
       Caption         =   "Confirm Password :"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -131,7 +131,7 @@ Begin VB.Form ChangePassword
       Caption         =   "Enter New Password :"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -150,7 +150,7 @@ Begin VB.Form ChangePassword
       Caption         =   "Enter Current Password :"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False

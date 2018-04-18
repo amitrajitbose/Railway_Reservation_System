@@ -4,12 +4,12 @@ Object = "{CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0"; "MSDATGRD.OCX"
 Begin VB.Form page1 
    BackColor       =   &H00FFFFFF&
    Caption         =   "Train Details"
-   ClientHeight    =   5235
+   ClientHeight    =   5232
    ClientLeft      =   120
-   ClientTop       =   450
+   ClientTop       =   456
    ClientWidth     =   9000
    LinkTopic       =   "Form1"
-   ScaleHeight     =   5235
+   ScaleHeight     =   5232
    ScaleWidth      =   9000
    StartUpPosition =   2  'CenterScreen
    Begin MSDataGridLib.DataGrid DataGrid1 
@@ -19,14 +19,14 @@ Begin VB.Form page1
       TabIndex        =   7
       Top             =   2760
       Width           =   7815
-      _ExtentX        =   13785
-      _ExtentY        =   2355
+      _ExtentX        =   13780
+      _ExtentY        =   2350
       _Version        =   393216
       HeadLines       =   1
       RowHeight       =   15
       BeginProperty HeadFont {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.8
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -35,7 +35,7 @@ Begin VB.Form page1
       EndProperty
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.8
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -82,7 +82,7 @@ Begin VB.Form page1
       Caption         =   "Book Seats"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -102,8 +102,8 @@ Begin VB.Form page1
       Top             =   0
       Visible         =   0   'False
       Width           =   1215
-      _ExtentX        =   2143
-      _ExtentY        =   582
+      _ExtentX        =   2138
+      _ExtentY        =   593
       ConnectMode     =   0
       CursorLocation  =   3
       IsolationLevel  =   -1
@@ -124,7 +124,7 @@ Begin VB.Form page1
       Orientation     =   0
       Enabled         =   -1
       Connect         =   $"8.frx":0018
-      OLEDBString     =   $"8.frx":00A8
+      OLEDBString     =   $"8.frx":00A6
       OLEDBFile       =   ""
       DataSourceName  =   ""
       OtherAttributes =   ""
@@ -134,7 +134,7 @@ Begin VB.Form page1
       Caption         =   "Adodc1"
       BeginProperty Font {0BE35203-8F91-11CE-9DE3-00AA004BB851} 
          Name            =   "MS Sans Serif"
-         Size            =   8.25
+         Size            =   7.8
          Charset         =   0
          Weight          =   400
          Underline       =   0   'False
@@ -148,7 +148,7 @@ Begin VB.Form page1
       Caption         =   "Get Details"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -181,7 +181,7 @@ Begin VB.Form page1
       Caption         =   "My Profile"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   7.5
+         Size            =   7.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -220,7 +220,7 @@ Begin VB.Form page1
       Caption         =   "Enter Destination Station"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
@@ -239,7 +239,7 @@ Begin VB.Form page1
       Caption         =   "Enter Source Station"
       BeginProperty Font 
          Name            =   "Century Gothic"
-         Size            =   10.5
+         Size            =   10.8
          Charset         =   0
          Weight          =   700
          Underline       =   0   'False
