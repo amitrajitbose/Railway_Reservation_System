@@ -77,7 +77,7 @@ Begin VB.Form welcomepage
    End
    Begin VB.Image Image1 
       Height          =   3060
-      Left            =   600
+      Left            =   1200
       Picture         =   "welcomepage.frx":0000
       Top             =   -480
       Width           =   4800

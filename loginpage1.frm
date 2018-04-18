@@ -3,13 +3,13 @@ Object = "{67397AA1-7FB1-11D0-B148-00A0C922E820}#6.0#0"; "MSADODC.OCX"
 Begin VB.Form loginpage1 
    BackColor       =   &H00FFFFFF&
    Caption         =   "Login"
-   ClientHeight    =   3372
+   ClientHeight    =   2976
    ClientLeft      =   120
    ClientTop       =   456
-   ClientWidth     =   7812
+   ClientWidth     =   5304
    LinkTopic       =   "Form1"
-   ScaleHeight     =   3372
-   ScaleWidth      =   7812
+   ScaleHeight     =   2976
+   ScaleWidth      =   5304
    StartUpPosition =   2  'CenterScreen
    Begin MSAdodcLib.Adodc loginado 
       Height          =   330
