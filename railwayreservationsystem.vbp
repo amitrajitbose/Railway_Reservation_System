@@ -13,6 +13,7 @@ Form=page4.frm
 Form=page3.frm
 Object={CDE57A40-8B86-11D0-B3C6-00A0C90AEA82}#1.0#0; MSDATGRD.OCX
 Form=ChangePassword.frm
+Form=about.frm
 IconForm="welcomepage"
 Startup="welcomepage"
 Command32=""

@@ -9,7 +9,7 @@ Begin VB.Form page2
    LinkTopic       =   "Form1"
    ScaleHeight     =   6024
    ScaleWidth      =   9120
-   StartUpPosition =   3  'Windows Default
+   StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton Command3 
       BackColor       =   &H00FFC0C0&
       Caption         =   "Change Password"

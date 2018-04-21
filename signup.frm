@@ -10,7 +10,7 @@ Begin VB.Form signup
    LinkTopic       =   "Form1"
    ScaleHeight     =   4152
    ScaleWidth      =   7140
-   StartUpPosition =   3  'Windows Default
+   StartUpPosition =   2  'CenterScreen
    Begin MSAdodcLib.Adodc loginado2 
       Height          =   330
       Left            =   0
