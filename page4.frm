@@ -10,7 +10,7 @@ Begin VB.Form page4
    LinkTopic       =   "Form1"
    ScaleHeight     =   6264
    ScaleWidth      =   7044
-   StartUpPosition =   3  'Windows Default
+   StartUpPosition =   2  'CenterScreen
    Begin VB.CommandButton Command6 
       BackColor       =   &H00FFC0C0&
       Caption         =   "Cancel"
@@ -342,8 +342,9 @@ Adodc1.Refresh
 Dim a, b As Integer
 a = Text3.Text
 b = Text1.Text
-
-If a > b Then
+If a = 0 Then
+MsgBox "Seats must be at least 1 ", vbCritical, "Try Again"
+ElseIf a > b Then
 MsgBox "Number of seats required unavailable", vbCritical, "Sorry!"
 Text3.Text = ""
 Text4.Text = ""
@@ -355,13 +356,7 @@ End If
 End Sub
 
 Private Sub Command4_Click()
-If Text4.Text = "" Then
-MsgBox "Invalid !!", vbCritical, "Select from list"
-ElseIf Text4.Text = "0" Then
-MsgBox "Number of seats required unavailable", vbCritical, "Sorry!"
-Text3.Text = ""
-Text4.Text = ""
-Else
+
 Adodc1.RecordSource = "select * from Seats where Train_No='" + Combo1.Text + "'and Type='" + Combo2.Text + "'"
 Adodc1.Refresh
 Dim x, y As Integer
@@ -374,7 +369,7 @@ Adodc1.Refresh
 page2.Text6.Text = Combo1.Text
 page2.Text7.Text = Combo2.Text
 page2.Text8.Text = Text3.Text
-End If
+
 a = MsgBox("Are you sure you want to proceed to the Online Payment Portal?", vbOKCancel, "Confirm Payment")
 If a = 1 Then
 CreateObject("Wscript.Shell").Run "https://business.paytm.com/"

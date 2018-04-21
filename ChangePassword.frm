@@ -10,7 +10,7 @@ Begin VB.Form ChangePassword
    LinkTopic       =   "Form1"
    ScaleHeight     =   3660
    ScaleWidth      =   7404
-   StartUpPosition =   3  'Windows Default
+   StartUpPosition =   2  'CenterScreen
    Begin MSAdodcLib.Adodc Adodc1 
       Height          =   312
       Left            =   5400

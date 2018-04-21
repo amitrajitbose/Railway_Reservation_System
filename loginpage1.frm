@@ -193,7 +193,7 @@ If loginado.Recordset.EOF Then
 MsgBox "LOGIN FAILED", vbCritical, "RETRY"
 loginpage1.Show
 Else
-MsgBox "LOGIN SUCCESSFUL", , "LOGGED IN"
+MsgBox "LOGIN SUCCESSFUL", vbInformation, "LOGGED IN"
 page1.Show
 Unload Me
 
